@@ -13,15 +13,14 @@ h2{
     font-size: 18px;
 }
 #total{
-    width: 1000px;
+    width: 95%;
+    max-width: 1000px;
     margin: auto;
     margin-top: 30px;
     
 }
         
-        
-
-#banner img{
+#banner img{/*pode usar também o padding-bottom: 30px só no banner*/
     width: 100%;
     margin-top: 2px;
 }
@@ -33,7 +32,8 @@ h2{
     background-color: black;
     height: 30px;
     margin-top: 30px;
-    padding-top: 10px;
+    padding-top:10px;
+    margin-bottom: 2px;
     
     
 }
@@ -81,5 +81,54 @@ h2{
     color: #999;
 }  
     
+@media screen and (max-width: 640px){
+    .texto1, .texto2{
+        width: 100%;
+    }
+    #menu{
+        height: auto;
+       
+    }
     
     
+ #cont{ /*pode usar também last-child ou border none no #menu a*/   
+         border: 0px solid black !important; 
+        
+    }
+ #menu a{
+     display: block;
+     border-bottom: 1px solid white; 
+     line-height: 40px;
+        
+    }
+
+  
+}
+   
+#anuncio{
+    width: 100%;
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0;
+    display: none;    
+}
+
+}
+h1, h2 {
+    text-align: center;
+}
+#rodape{
+    text-align: center; 
+}
+@media screen and (min-width: 641px) and (max-width: 768px){
+    #anuncio {
+        display: block;
+    }
+  #menu a {
+    font-size: 14px;
+    margin: 0 25px;
+}
+  
+    }
